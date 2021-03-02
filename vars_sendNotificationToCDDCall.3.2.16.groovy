@@ -148,9 +148,9 @@ void sendNotificationToCDDirector(scope) {
   commitSource: '', 
   scope: "${scope}",
   fileSourceName:'',
-  fileSourceParameters:'{"branch":"${CDD_APPLICATION_VERSION_NAME}"}',
+  fileSourceParameters:'',
   dslFilename:'',
-  dslParameters:'{"BUSINESS_APPLICATION_NAME": "${CDD_BUSINESS_APPLICATION_NAME}", "BUSINESS_APPLICATION_VERSION_NAME": "${CDD_APPLICATION_VERSION_NAME}", "APPLICATION_NAME":"${CDD_APPLICATION_NAME}","APPLICATION_VERSION_NAME":"${CDD_APPLICATION_VERSION_NAME}"}'
+  dslParameters:''
  echo '----------Jenkins Pipeline completed successfully--------------'
 }
 
