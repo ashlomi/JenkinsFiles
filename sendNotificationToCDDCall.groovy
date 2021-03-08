@@ -23,7 +23,6 @@ void environmentSetUp(projectName) {
  getAPIKeyFromCredentials(projectName)
  setGitEnvironmentVariables()
  setCDDServerName()
- env.CDD_SERVER_PORT = 443
  env.CDD_USE_SSL = true
  env.CDD_PROXY_SERVER_URL = ""
  env.CDD_PROXY_SERVER_USERNAME = ""
