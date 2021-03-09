@@ -125,6 +125,7 @@ String executeCommand(String command) {
 void sendNotificationToCDDirector(scope) {
  echo '----------Sending Change Notification to CDD--------------'
  echo "Environment variables: GIT_URL: [$env.GIT_URL], GIT_BRANCH: [$env.GIT_BRANCH], BRANCH_NAME: [$env.BRANCH_NAME], GIT_LOCAL_BRANCH: [$env.GIT_LOCAL_BRANCH], CDD_APPLICATION_NAME: [${CDD_APPLICATION_NAME}], CDD_APPLICATION_VERSION_NAME: [${CDD_APPLICATION_VERSION_NAME}], GIT_COMMIT: [${env.GIT_COMMIT}], GIT_PREVIOUS_SUCCESSFUL_COMMIT: [${env.GIT_PREVIOUS_SUCCESSFUL_COMMIT}]"
+echo "CDD_SERVER_PORT: [env.CDD_SERVER_PORT]"
  sendNotificationToCDD useSourceCodeRepositoryNameAsApplicationName: true,
   applicationName: "${CDD_APPLICATION_NAME}",
   useSourceCodeRepositoryBranchNameAsApplicationVersionName: true,
