@@ -24,7 +24,7 @@ void environmentSetUp(projectName) {
  setGitEnvironmentVariables()
  setCDDServerName()
  env.CDD_SERVER_PORT = 8080
- env.CDD_USE_SSL = true
+ env.CDD_USE_SSL = false
  env.CDD_PROXY_SERVER_URL = ""
  env.CDD_PROXY_SERVER_USERNAME = ""
  env.CDD_PROXY_SERVER_PASSWORD = ""
@@ -137,10 +137,10 @@ void sendNotificationToCDDirector(scope) {
    customProxyUrl: "${CDD_PROXY_SERVER_URL}",
    customProxyUsername: "${CDD_PROXY_SERVER_USERNAME}",
    customProxyPassword: "${CDD_PROXY_SERVER_PASSWORD}",
-   customServerName: 'lvntest002908.bpc.broadcom.net',
-   customServerPort: 8080,
+   customServerName: "${CDD_SERVER_NAME}",
+   customServerPort: "${CDD_SERVER_PORT}",
    customTenantId: "${CDD_TENANT_ID}",
-   customUseSSL: false
+   customUseSSL: "${CDD_USE_SSL}"
   ],
   ignoreNonexistentApplication: true,
   releaseTokens: '{}',
