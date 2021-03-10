@@ -140,7 +140,7 @@ void sendNotificationToCDDirector(scope) {
    customServerName: 'lvntest002908.bpc.broadcom.net',
    customServerPort: 8080,
    customTenantId: "${CDD_TENANT_ID}",
-   customUseSSL: "${CDD_USE_SSL}"
+   customUseSSL: false
   ],
   ignoreNonexistentApplication: true,
   releaseTokens: '{}',
