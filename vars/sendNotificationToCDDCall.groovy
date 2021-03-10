@@ -137,8 +137,8 @@ void sendNotificationToCDDirector(scope) {
    customProxyUrl: "${CDD_PROXY_SERVER_URL}",
    customProxyUsername: "${CDD_PROXY_SERVER_USERNAME}",
    customProxyPassword: "${CDD_PROXY_SERVER_PASSWORD}",
-   customServerName: "${CDD_SERVER_NAME}",
-   customServerPort: "${CDD_SERVER_PORT}",
+   customServerName: 'lvntest002908.bpc.broadcom.net',
+   customServerPort: 8080,
    customTenantId: "${CDD_TENANT_ID}",
    customUseSSL: "${CDD_USE_SSL}"
   ],
